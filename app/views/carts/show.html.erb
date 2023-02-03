@@ -5,7 +5,7 @@
   </header>
 
   <% if enhanced_cart.length == 0 %>
-    <h3>Your cart is empty! Do you want to add some items?</h3>
+    <h3>Your cart is empty! Do you want to go back to <%= link_to "Home page", root_path %>  and add some items?</h3>
   <% else %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
@@ -34,7 +34,6 @@
       </tfoot>
     </table>
   </div>
-  <% end %>
 
   <div class="row">
     <div class="col-xs-12">
@@ -52,5 +51,6 @@
       <% end %>
     </div>
   </div>
+  <% end %>
 
 </section>
