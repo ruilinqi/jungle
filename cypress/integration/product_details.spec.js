@@ -13,7 +13,7 @@ describe('example to-do app', () => {
   });
 
   it("renders product detail page by clicking on a product", () => {
-    cy.get('[alt="Lion Grapevine"]').click();
+    cy.get('[alt="Scented Blade"]').click();
     cy.get(".product-detail").should("exist");
-  })
+  });
 })
